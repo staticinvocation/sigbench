@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.platinumdigitalgroup.sigbench.ResultsController">
+   <top>
+      <BorderPane styleClass="info-warning" stylesheets="@theme.css" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <left>
+            <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+               <image>
+                  <Image url="@info28.png" />
+               </image>
+            </ImageView>
+         </left>
+         <center>
+            <Label text="Screenshots of sigbench results in any cheat marketing materials should not be trusted as the results may be tampered with or otherwise invalid." textFill="WHITE" wrapText="true" BorderPane.alignment="TOP_CENTER">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+            </Label>
+         </center>
+      </BorderPane>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane styleClass="result-box" stylesheets="@theme.css">
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <left>
+                  <ImageView pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@tick7.png" />
+                     </image>
+                  </ImageView>
+               </left>
+               <right>
+                  <VBox alignment="TOP_RIGHT" prefHeight="59.0" prefWidth="402.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="the two files are about" />
+                        <Label fx:id="pctLabel" text="76%">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="-10.0" left="-10.0" top="-10.0" />
+                           </padding>
+                        </Label>
+                        <Label text="different." />
+                     </children>
+                  </VBox>
+               </right>
+            </BorderPane>
+            <ListView fx:id="resultList" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

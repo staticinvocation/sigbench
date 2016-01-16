@@ -1,0 +1,14 @@
+.info-warning {
+    -fx-background-color: orangered;
+}
+
+.dropzone {
+    -fx-border-color: gray;
+    -fx-border-radius: 5px;
+    -fx-border-style: dashed;
+    -fx-background-color: lightgray;
+}
+
+.result-box {
+    -fx-background-color: lightgray;
+}
