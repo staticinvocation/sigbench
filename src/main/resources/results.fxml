@@ -53,13 +53,13 @@
                         <Label text="the two files are about" />
                         <Label fx:id="pctLabel" text="76%">
                            <font>
-                              <Font size="30.0" />
+                              <Font name="Arial" size="30.0" />
                            </font>
                            <padding>
                               <Insets bottom="-10.0" left="-10.0" top="-10.0" />
                            </padding>
                         </Label>
-                        <Label text="different." />
+                        <Label text="different, with 95% confidence." />
                      </children>
                   </VBox>
                </right>
